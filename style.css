@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.ChessBoard{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    margin : 0 auto;
+    flex-wrap: wrap;
+}
+
+.square{
+    display: flex;
+    width: 12.25%;
+    height: 12.25%;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.white{
+    background-color: peachpuff;
+}
+.white:hover{
+    background-color: lightgray;
+}
+
+.black{
+    background-color: darkslategrey;
+}
+.black:hover{
+    background-color: lightgray;
+}
+.coordinate{
+    display: flex;
+    height: auto;
+    bottom: 5%;
+    left: 5%;
+    position: absolute;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+.coordinate-Y{
+    display: flex;
+    height: auto;
+    left: 5%;
+    position: absolute;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+}
+
+.coordinate:hover{
+    color: white;
+}
+.coordinate-Y:hover{
+    color: white;
+}
+
+.piece{
+    display: flex;
+    height: 90%;
+    width:  90%;
+}
+
+
+@media(min-width: 600px) {
+    .ChessBoard{
+        width: 600px;
+        height: 600px;
+    }
+}
