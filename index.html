@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="game-wrapper">
 <div class="sidebar">
     <h2>Move History :</h2>
     <ul id="moveHistoryList">
@@ -13,7 +15,10 @@
     </ul>
 </div>
 
-<div class="ChessBoard">
+
+
+    <div class="BoardContainer">
+    <div class="ChessBoard">
 
 <!--    this is the 8th rank -->
     <div class="white square">
@@ -236,8 +241,50 @@
             <img src="pieces-basic-png/white-rook.png" alt="Rook">
         </div>
     </div>
+        <div id="alert">
+
+        </div>
 </div>
 
+    <div class="eval-container">
+        <div id="evalBar">
+            <div class="blackBar" style="width: 50%"> </div>
+            <div class="zero"></div>
+            <div class="evalNum">0.5</div>
+        </div>
+
+
+    </div>
+
+</div>
+    <div class="tablecont">
+        <button id="toggleButton">Toggle Table</button>
+    <table id="topLines">
+        <thead>
+        <tr>
+            <th id="eval"></th>
+            <th id="evalText"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td id="eval1"></td>
+            <td id="line1"></td>
+        </tr>
+        <tr>
+            <td id="eval2"></td>
+            <td id="line2"></td>
+        </tr>
+        <tr>
+            <td id="eval3"></td>
+            <td id="line3"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    </div>
+
+</div>
 
 <script src="ChessWeb.js" ></script>
 </body>
